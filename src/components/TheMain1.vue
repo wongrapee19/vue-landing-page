@@ -1,6 +1,11 @@
 <template>
   <div class="grid-con">
-    <img src="../assets/banner.png" alt="" />
+    <div class="mb-con">
+      <img src="../assets/banner.png" alt="" />
+    </div>
+    <div class="dt-con">
+      <img src="../assets/banner.jpg" alt="" />
+    </div>
 
     <div class="grid-value">
       <div>
@@ -38,6 +43,9 @@
   <br />
   <div class="grid-con">
     <div class="grid-value">
+      <div class="mb-con">
+        <img src="../assets/banner.png" alt="" />
+      </div>
       <div>
         <p>
           <span class="texthead"> Voice Recognition </span> <br />
@@ -68,45 +76,60 @@
         </button>
       </div>
     </div>
-    <img src="../assets/banner.jpg" alt="" />
+    <div class="dt-con">
+      <img src="../assets/banner.jpg" alt="" />
+    </div>
   </div>
 </template>
 <script setup></script>
 <style scoped>
-.grid-con {
-  padding-left: 20px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-content: center;
-  grid-column-gap: 2rem;
-  align-items: center;
+@media screen and (min-width: 320px) {
+  .dt-con {
+    display: none;
+  }
+  .grid-con {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    grid-column-gap: 2rem;
+    align-items: center;
+  }
 }
-/* .grid-con2 {
-  padding-top: 20px;
-  padding-left: 10px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-content: center;
-  align-items: center;
-  grid-column-gap: 2rem;
-} */
-.grid-con2 img {
-  border-radius: 60px;
-  width: 90%;
-}
-.grid-con img {
-  border-radius: 60px;
-  width: 90%;
-}
-.grid-value {
-  padding-left: 20px;
-  display: grid;
-}
+@media screen and (min-width: 992px) {
+  .dt-con {
+    display: flex;
+  }
+  .mb-con {
+    display: none;
+  }
+  .grid-con {
+    padding-top: 50px;
+    padding-left: 0px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    grid-column-gap: 2rem;
+    align-items: center;
+  }
 
-.texthead {
-  font-size: 40px;
-}
-.button-con {
-  padding-top: 30px;
+  .grid-con2 img {
+    border-radius: 60px;
+    width: 100%;
+  }
+  .grid-con img {
+    border-radius: 60px;
+    width: 100%;
+  }
+  .grid-value {
+    padding-left: 20px;
+    display: grid;
+  }
+
+  .texthead {
+    font-size: 40px;
+  }
+  .button-con {
+    padding-top: 30px;
+  }
 }
 </style>

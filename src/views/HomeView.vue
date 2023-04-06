@@ -6,14 +6,32 @@ import TheMain1 from "../components/TheMain1.vue";
 <template>
   <main>
     <div class="grid-contain">
-      <TheMain1 />
+      <div class="grid-top">
+        <TheMain1 />
+        <TheMain1 />
+      </div>
     </div>
   </main>
 </template>
 
 <style scoped>
-.grid-contain {
-  padding-top: 100px;
-  display: grid;
+@media screen and (min-width: 320px) {
+  .grid-contain {
+    padding: 40px;
+    display: grid;
+  }
+  .grid-top {
+    padding-top: 50px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .grid-contain {
+    padding: 50px;
+    display: grid;
+  }
+  .grid-top {
+    padding-top: 20px;
+  }
 }
 </style>
