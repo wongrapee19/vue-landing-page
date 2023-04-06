@@ -9,7 +9,7 @@
       @click="store.increment()"
       class="bg-blue-400 py-3 px-4 rounded-lg hover:bg-blue-600"
     >
-      Click For Plus A
+      Click Plus A :]
     </button>
   </div>
 
@@ -18,7 +18,7 @@
       @click="store.increment2()"
       class="bg-blue-400 py-3 px-4 rounded-lg hover:bg-blue-600"
     >
-      Click For Plus B
+      Click Plus B :]
     </button>
   </div>
 </template>
