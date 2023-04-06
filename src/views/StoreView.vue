@@ -1,6 +1,6 @@
 <template lang="">
   <div class="store-con">
-    Card Count: {{ store.count }}
+    Card Count Num: {{ store.count }}
     <br />
     
   </div>
