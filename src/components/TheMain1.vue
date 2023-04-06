@@ -1,6 +1,6 @@
 <template>
   <div class="grid-con">
-    <img src="../assets/banner.jpg" alt="" />
+    <img src="../assets/banner.png" alt="" />
 
     <div class="grid-value">
       <div>
@@ -35,7 +35,7 @@
   </div>
   <br />
   <hr />
-
+  <br />
   <div class="grid-con">
     <div class="grid-value">
       <div>
